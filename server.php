@@ -24,7 +24,16 @@ if( $data == null ){
 } else {
 	foreach ($data as $result) {
     if ($result->comuna_nombre == $comuna){
-		 $chatfuel->sendText('' . $result->local_nombre . '');
+		 //$chatfuel->sendText('' . $result->local_nombre . '');
+		 $chatfuel->sendText([
+			 '' . $result->local_nombre . '',
+			 '' . $result->comuna_nombre . '',
+			 '' . $result->localidad_nombre . '',
+			 '' . $result->local_direccion . '',
+			 '' . $result->funcionamiento_hora_apertura . '',
+			 '' . $result->funcionamiento_hora_cierre . '',
+			 '' . $result->local_telefono . ''
+		 ]);
           //echo $result->comuna_nombre . '   |   ' . $result->local_nombre . '   |   ' . $result->local_direccion . '   |   ' . $result->funcionamiento_hora_apertura . '<br>';
       }
   }
