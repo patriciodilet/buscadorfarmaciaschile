@@ -1,0 +1,23 @@
+{
+  "name": "farmacias",
+  "version": "1.0.0",
+  "description": "api de farmacias",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/apifarmacias.git"
+  },
+  "keywords": [
+    "farmacias",
+    "de",
+    "chile"
+  ],
+  "author": "chatxbot",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
