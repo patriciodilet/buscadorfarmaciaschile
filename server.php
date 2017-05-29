@@ -39,12 +39,15 @@ foreach ($data as $result) {
     }
 }
 
-		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
-		 . '' . $mascerca->localidad_nombre 
-		 . '' . $mascerca->local_direccion
-		 . '' . $mascerca->funcionamiento_hora_apertura
-		 . '' . $mascerca->funcionamiento_hora_cierre 
-		 . '' . $mascerca->local_telefono . '');
+$res = nl2br("" . $mascerca->local_nombre . "\n" . $mascerca->localidad_nombre);
+
+$chatfuel->sendText('' . $res . '');
+// 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
+// . '' . $mascerca->localidad_nombre 
+// . '' . $mascerca->local_direccion
+// . '' . $mascerca->funcionamiento_hora_apertura
+// . '' . $mascerca->funcionamiento_hora_cierre 
+// . '' . $mascerca->local_telefono . '');
 
 
 
