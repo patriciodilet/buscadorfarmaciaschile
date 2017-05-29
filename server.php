@@ -39,8 +39,8 @@ foreach ($data as $result) {
     }
 }
 
-$res = nl2br("" . $mascerca->local_nombre . "" 
-. $mascerca->localidad_nombre);
+$res = nl2br("" . $mascerca->local_nombre . "
+" . $mascerca->localidad_nombre);
 
 
 //$chatfuel->sendTextCard('' . $res . '', 'button');
