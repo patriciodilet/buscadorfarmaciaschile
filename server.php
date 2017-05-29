@@ -22,7 +22,9 @@ if (isset($_GET['type']) && ! empty($_GET['type']) && isset($_GET['comuna']) && 
 if( $data == null ){
 	$chatfuel->sendText('nada');
 } else {
+	$i = 0;	
 	foreach ($data as $result) {
+		if (++$i == 5) break;
     if ($result->comuna_nombre == $comuna){
 		 $chatfuel->sendText('' . $result->local_nombre . '
 ' . $result->comuna_nombre . '');
