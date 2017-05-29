@@ -39,8 +39,9 @@ foreach ($data as $result) {
     }
 }
 
-$res = "" . $mascerca->local_nombre . "
-" . $mascerca->localidad_nombre;
+$res = "Farmacia: " . $mascerca->local_nombre . "
+Comuna: " . $mascerca->localidad_nombre . "
+Dirección: " . $mascerca->local_direccion;
 
 
 //$chatfuel->sendTextCard('' . $res . '', 'button');
