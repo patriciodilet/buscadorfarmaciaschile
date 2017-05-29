@@ -24,7 +24,6 @@ $chatfuel = new Chatfuel(TRUE);
 
 $data = json_decode($json);
 
-//$ref = array(-33.449474, -70.65527);
 $ref = array($lat, $lon);
 
 
@@ -41,11 +40,14 @@ foreach ($data as $result) {
 
 $res = "Farmacia: " . $mascerca->local_nombre . "
 Comuna: " . $mascerca->localidad_nombre . "
+Dirección: " . $mascerca->local_direccion . "
+Hora apertura: " . $mascerca->funcionamiento_hora_apertura . "
+Hora cierre: " . $mascerca->funcionamiento_hora_cierre . "
 Dirección: " . $mascerca->local_direccion;
 
 
-//$chatfuel->sendTextCard('' . $res . '', 'button');
-$chatfuel->sendText('' . $res . '');
+$chatfuel->sendTextCard('' . $res . '', 'button');
+//$chatfuel->sendText('' . $res . '');
 // 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
 // . '' . $mascerca->localidad_nombre 
 // . '' . $mascerca->local_direccion
