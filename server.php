@@ -48,6 +48,7 @@ Dirección: " . $mascerca->local_direccion;
 
 //$chatfuel->sendTextCard('' . $res . '', 'button');
 $chatfuel->sendText('' . $res . '');
+$chatfuel->createButtonToURL('Como llegar','https://www.google.cl/maps/@-33.440616,-70.6514212,15z');
 // 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
 // . '' . $mascerca->localidad_nombre 
 // . '' . $mascerca->local_direccion
