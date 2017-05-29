@@ -42,8 +42,8 @@ $res = "Farmacia: " . $mascerca->local_nombre . "
 Comuna: " . $mascerca->localidad_nombre . "
 Dirección: " . $mascerca->local_direccion . "
 Hora apertura: " . $mascerca->funcionamiento_hora_apertura . "
-Hora cierre: " . $mascerca->funcionamiento_hora_cierre . "
-Dirección: " . $mascerca->local_direccion;
+Hora cierre: " . $mascerca->funcionamiento_hora_cierre;
+
 
 
 //$chatfuel->sendTextCard('' . $res . '', 'button');

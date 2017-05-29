@@ -142,7 +142,7 @@ class Chatfuel
 
   public function createButtonToURL($title, $url, $setAttributes = NULL)
   {
-    if ($this->isURL($url)) {
+    //if ($this->isURL($url)) {
       $button = array();
       $button['type'] = 'web_url';
       $button['url'] = $url;
@@ -153,7 +153,7 @@ class Chatfuel
       }
 
       return $button;
-    }
+    //}
 
     return FALSE;
   }
