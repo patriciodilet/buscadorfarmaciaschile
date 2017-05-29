@@ -44,11 +44,37 @@ Dirección: " . $mascerca->local_direccion . "
 Hora apertura: " . $mascerca->funcionamiento_hora_apertura . "
 Hora cierre: " . $mascerca->funcionamiento_hora_cierre;
 
+$prueba = '{
+  "messages": [
+    {
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type": "button",
+          "text": "Hello!",
+          "buttons": [
+            {
+              "type": "show_block",
+              "block_name": "some block name",
+              "title": "Show the block!"
+            },
+            {
+              "type": "web_url",
+              "url": "https://petersapparel.parseapp.com/buy_item?item_id=100",
+              "title": "Buy Item"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}';
 
+return $prueba;
 
 //$chatfuel->sendTextCard('' . $res . '', 'button');
 //$chatfuel->sendText('' . $res . '');
-$chatfuel->createButtonToURL('Como llegar',"https://www.google.cl/maps/@-33.440616,-70.6514212,15z");
+//$chatfuel->createButtonToURL('Como llegar',"https://www.google.cl/maps/@-33.440616,-70.6514212,15z");
 // 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
 // . '' . $mascerca->localidad_nombre 
 // . '' . $mascerca->local_direccion
