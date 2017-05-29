@@ -48,7 +48,7 @@ $indicaciones = 'https://www.google.cl/maps/dir/' . $lat . ',' . $lon . '/' . $m
  
  $chatfuel->sendTextCard('' . $res . '', array(
 	$chatfuel->createButtonToURL('Como llegar', $indicaciones),
-	$chatfuel->createButtonToURL('otro','https://www.google.cl')
+	$chatfuel->createButtonToBlock('Otra búsqueda','farmacias')
  ));
 
 //$chatfuel->sendTextCard('' . $res . '', 'button');
