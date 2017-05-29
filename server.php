@@ -13,9 +13,9 @@ if (isset($_GET['type']) && ! empty($_GET['type']) &&
   
 
 
-if($type == '1'){
+if($type == 'Todas'){
 	$json = file_get_contents('http://farmanet.minsal.cl/maps/index.php/ws/getLocales');
-} elseif ($type == '2'){
+} elseif ($type == 'Turno'){
 	$json = file_get_contents('http://farmanet.minsal.cl/maps/index.php/ws/getLocalesTurnos');
 } 
 
