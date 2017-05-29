@@ -20,7 +20,8 @@ $chatfuel = new Chatfuel(TRUE);
 
 $data = json_decode($json);
 
-$ref = array(-33.449474, -70.65527);
+//$ref = array(-33.449474, -70.65527);
+$ref = array(-70.65527, -33.449474);
 
 
 $closest = null;
