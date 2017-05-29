@@ -46,8 +46,8 @@ Hora cierre: " . $mascerca->funcionamiento_hora_cierre . "
 Dirección: " . $mascerca->local_direccion;
 
 
-$chatfuel->sendTextCard('' . $res . '', 'button');
-//$chatfuel->sendText('' . $res . '');
+//$chatfuel->sendTextCard('' . $res . '', 'button');
+$chatfuel->sendText('' . $res . '');
 // 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
 // . '' . $mascerca->localidad_nombre 
 // . '' . $mascerca->local_direccion
