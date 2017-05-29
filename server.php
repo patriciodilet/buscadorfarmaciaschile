@@ -34,7 +34,7 @@ foreach ($data as $result) {
     }
 }
 
-echo $closest . ' - ' . $result->local_direccion ;
+echo $closest . ' - ' . $result->local_direccion . ', ' . $result->comuna_nombre ;
 
 
 // if( $data == null ){
