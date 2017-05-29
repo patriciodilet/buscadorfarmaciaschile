@@ -7,7 +7,7 @@ if (isset($_GET['type']) && ! empty($_GET['type']) &&
 	isset($_GET['lat']) && ! empty($_GET['lat'])  &&
 	isset($_GET['lon']) && ! empty($_GET['lon']) ){
 
-  $type = strtoupper($_GET['type']);
+  $type = $_GET['type'];
   $lat = $_GET['lat'];
   $lon = $_GET['lon'];
   
