@@ -44,8 +44,10 @@ Dirección: " . $mascerca->local_direccion . "
 Hora apertura: " . $mascerca->funcionamiento_hora_apertura . "
 Hora cierre: " . $mascerca->funcionamiento_hora_cierre;
  
- $chatfuel->sendTextCard('prueba', array(
-	$chatfuel->createButtonToURL('Como llegar','https://www.google.cl'),
+$indicaciones = 'https://www.google.cl/maps/dir/' . $lat . ',' . $lon . '/' . $mascerca->local_lat . ',' . $mascerca->local_lng . '';  
+ 
+ $chatfuel->sendTextCard('' . $res . '', array(
+	$chatfuel->createButtonToURL('Como llegar', $indicaciones),
 	$chatfuel->createButtonToURL('otro','https://www.google.cl')
  ));
 
