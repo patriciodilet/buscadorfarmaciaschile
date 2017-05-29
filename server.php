@@ -23,15 +23,18 @@ $data = json_decode($json);
 $ref = array(-33.449474, -70.65527);
 
 
+$closest = null;
+$mascerca = null;
 foreach ($data as $result) {
 	$b = array($result->local_lat , $result->local_lng);
 	$distance = distance($ref, $b);
 	if ($closest === null || $closest > $distance) {
         $closest = $distance;
+		$mascerca = $result;
     }
 }
 
-echo $closest;
+echo $closest . ' - ' . $result->local_direccion ;
 
 
 // if( $data == null ){
