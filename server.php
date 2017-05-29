@@ -20,7 +20,7 @@ $chatfuel = new Chatfuel(TRUE);
 
 $data = json_decode($json);
 
-$ref = array(-70.65527, -33.449474);
+$ref = array(-33.449474, -70.65527);
 
 $items = array(
     '0' => array('item1','otheritem1details....','55.645645','-42.5323'),
