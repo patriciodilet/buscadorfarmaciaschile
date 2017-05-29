@@ -44,11 +44,15 @@ Dirección: " . $mascerca->local_direccion . "
 Hora apertura: " . $mascerca->funcionamiento_hora_apertura . "
 Hora cierre: " . $mascerca->funcionamiento_hora_cierre;
  
+ $chatfuel->sendTextCard('prueba', array(
+	$chatfuel->createButtonToURL('Como llegar','https://www.google.cl'),
+	$chatfuel->createButtonToURL('otro','https://www.google.cl')
+ ));
 
 //$chatfuel->sendTextCard('' . $res . '', 'button');
-$chatfuel->sendText('' . $res . '');
+//$chatfuel->sendText('' . $res . '');
 //$chatfuel->createButtonToURL('Como llegar','https://www.google.cl');
-$chatfuel->createShareButton();
+//$chatfuel->createShareButton();
 // 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
 // . '' . $mascerca->localidad_nombre 
 // . '' . $mascerca->local_direccion

@@ -140,28 +140,23 @@ class Chatfuel
     return $button;
   }
 
-  //public function createButtonToURL($title, $url, $setAttributes = NULL)
-  public function createButtonToURL($title, $url)
+  public function createButtonToURL($title, $url, $setAttributes = NULL)
   {
-    // if ($this->isURL($url)) {
-      // $button = array();
-      // $button['type'] = 'web_url';
-      // $button['url'] = $url;
-      // $button['title'] = $title;
+     if ($this->isURL($url)) {
+		$button = array();
+		$button['type'] = 'web_url';
+		$button['url'] = $url;
+		$button['title'] = $title;
       
-      // if ( ! is_null($setAttributes) && is_array($setAttributes)) {
-        // $button['set_attributes'] = $setAttributes;
-      // }
+		if ( ! is_null($setAttributes) && is_array($setAttributes)) {
+			$button['set_attributes'] = $setAttributes;
+		}
 
-      // return $button;
-    // }
+		return $button;
+     }
 
-    // return FALSE;
-	$button = array();
-    $button['type'] = 'web_url';
-    $button['url'] = $url;
-    $button['title'] = $title;
-	return $button;
+     return FALSE;
+
   }
 
   public function createPostBackButton($title, $url)
