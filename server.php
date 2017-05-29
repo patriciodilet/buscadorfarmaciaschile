@@ -22,19 +22,16 @@ $data = json_decode($json);
 
 $ref = array(-33.449474, -70.65527);
 
-$items = array(
-    '0' => array('item1','otheritem1details....','55.645645','-42.5323'),
-    '1' => array('item1','otheritem1details....','100.645645','-402.5323')
-);
 
-$distances = array_map(function($item) use($ref) {
-    $a = array_slice($item, -2);
-    return distance($a, $ref);
-}, $data);
+foreach ($data as $result) {
+	$b = array($result->local_lat , $result->local_lng);
+	$distance = distance($ref, $b);
+	if ($closest === null || $closest > $distance) {
+        $closest = $distance;
+    }
+}
 
-asort($distances);
-
-echo 'Close item is: ', var_dump($data[key($distances)]);
+echo $closest;
 
 
 // if( $data == null ){
