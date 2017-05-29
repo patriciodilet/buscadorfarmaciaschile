@@ -39,7 +39,11 @@ foreach ($data as $result) {
     }
 }
 
-echo $closest . ' - ' . $mascerca->local_direccion . ', ' . $mascerca->comuna_nombre ;
+		 $chatfuel->sendText('' . $mascerca->local_nombre . '
+' . $mascerca->comuna_nombre . 
+'' . $mascerca->local_lat . 
+'' . $mascerca->local_lng . '');
+//echo $closest . ' - ' . $mascerca->local_direccion . ', ' . $mascerca->comuna_nombre ;
 
 
 // if( $data == null ){
