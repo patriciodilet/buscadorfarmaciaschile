@@ -23,8 +23,7 @@ if( $data == null ){
 	$chatfuel->sendText('nada');
 } else {
 	
-	//foreach ($data as $result) {
-	foreach (limit($data, 5) as $key => $result) {
+	foreach ($data as $result) {
 
     if ($result->comuna_nombre == $comuna){
 		 $chatfuel->sendText('' . $result->local_nombre . '
@@ -48,11 +47,6 @@ if( $data == null ){
 
 }
 	
- function limit($iterable, $limit) {
-    foreach ($iterable as $key => $value) {
-        if (!$limit--) break;
-        yield $key => $value;
-    }
-}
+
    
    ?>
