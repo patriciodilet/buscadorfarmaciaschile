@@ -3,9 +3,13 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor/autoload.php';
 use chatxbot\Chatfuel;
 
  
-if (isset($_GET['type']) && ! empty($_GET['type']) && isset($_GET['comuna']) && ! empty($_GET['comuna'])  ){
+if (isset($_GET['type']) && ! empty($_GET['type']) && 
+	isset($_GET['lat']) && ! empty($_GET['lat'])  &&
+	isset($_GET['lon']) && ! empty($_GET['lon']) ){
+
   $type = strtoupper($_GET['type']);
-  $comuna = strtoupper($_GET['comuna']);
+  $lat = $_GET['lat'];
+  $lon = $_GET['lon'];
   
 
 
@@ -20,7 +24,8 @@ $chatfuel = new Chatfuel(TRUE);
 
 $data = json_decode($json);
 
-$ref = array(-33.449474, -70.65527);
+//$ref = array(-33.449474, -70.65527);
+$ref = array($lat, $lon);
 
 
 $closest = null;
