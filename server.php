@@ -42,8 +42,8 @@ foreach ($data as $result) {
 $res = nl2br("" . $mascerca->local_nombre . "" . $mascerca->localidad_nombre);
 
 
-$chatfuel->sendTextCard('' . $res . '', 'button');
-//$chatfuel->sendText('' . $res . '');
+//$chatfuel->sendTextCard('' . $res . '', 'button');
+$chatfuel->sendText('' . $res . '');
 // 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
 // . '' . $mascerca->localidad_nombre 
 // . '' . $mascerca->local_direccion
