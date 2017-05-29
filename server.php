@@ -30,11 +30,11 @@ $items = array(
 $distances = array_map(function($item) use($ref) {
     $a = array_slice($item, -2);
     return distance($a, $ref);
-}, $items);
+}, $data);
 
 asort($distances);
 
-echo 'Close item is: ', var_dump($items[key($distances)]);
+echo 'Close item is: ', var_dump($data[key($distances)]);
 
 
 // if( $data == null ){
