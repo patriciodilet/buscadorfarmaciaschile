@@ -34,7 +34,7 @@ $distances = array_map(function($item) use($ref) {
 
 asort($distances);
 
-echo 'Closest item is: ', var_dump($items[key($distances)]);
+echo 'Close item is: ', var_dump($items[key($distances)]);
 
 
 // if( $data == null ){
