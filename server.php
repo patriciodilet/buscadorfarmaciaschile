@@ -24,7 +24,8 @@ if( $data == null ){
 } else {
 	foreach ($data as $result) {
     if ($result->comuna_nombre == $comuna){
-		 $chatfuel->sendText('' . $result->local_nombre . '<br>test');
+		 $chatfuel->sendText('' . $result->local_nombre . '
+		 test');
 		//  $chatfuel->sendText([
 		// 	 '' . $result->local_nombre . '',
 		// 	 '' . $result->comuna_nombre . '',
