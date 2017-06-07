@@ -50,49 +50,8 @@ $indicaciones = 'https://www.google.cl/maps/dir/' . $lat . ',' . $lon . '/' . $m
 	$chatfuel->createButtonToURL('Como llegar', $indicaciones),
 	$chatfuel->createButtonToBlock('Otra búsqueda','comenzar')
  ));
-
-//$chatfuel->sendTextCard('' . $res . '', 'button');
-//$chatfuel->sendText('' . $res . '');
-//$chatfuel->createButtonToURL('Como llegar','https://www.google.cl');
-//$chatfuel->createShareButton();
-// 		 $chatfuel->sendText('' . $mascerca->local_nombre . ''
-// . '' . $mascerca->localidad_nombre 
-// . '' . $mascerca->local_direccion
-// . '' . $mascerca->funcionamiento_hora_apertura
-// . '' . $mascerca->funcionamiento_hora_cierre 
-// . '' . $mascerca->local_telefono . '');
-
-
-
-//echo $closest . ' - ' . $mascerca->local_direccion . ', ' . $mascerca->comuna_nombre ;
-
-
-// if( $data == null ){
-// 	$chatfuel->sendText('nada');
-// } else {
-// 	foreach ($data as $result) {
-//     if ($result->comuna_nombre == $comuna){
-// 		 $chatfuel->sendText('' . $result->local_nombre . '
-// ' . $result->comuna_nombre . 
-// '' . $result->local_lat . 
-// '' . $result->local_lng . '');
-
-// 		//  $chatfuel->sendText([
-// 		// 	 '' . $result->local_nombre . '',
-// 		// 	 '' . $result->comuna_nombre . '',
-// 		// 	 '' . $result->localidad_nombre . '',
-// 		// 	 '' . $result->local_direccion . '',
-// 		// 	 '' . $result->funcionamiento_hora_apertura . '',
-// 		// 	 '' . $result->funcionamiento_hora_cierre . '',
-// 		// 	 '' . $result->local_telefono . ''
-// 		//  ]);
-//           //echo $result->comuna_nombre . '   |   ' . $result->local_nombre . '   |   ' . $result->local_direccion . '   |   ' . $result->funcionamiento_hora_apertura . '<br>';
-//       }
-//   }
-// }
-
-  
-
+ 
+ 
 }
 	
  

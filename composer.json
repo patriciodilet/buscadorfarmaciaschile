@@ -1,10 +1,10 @@
 {
-  "name": "chatxbot/php-chatfuel-class",
-  "description": "A PHP class to generate JSON output for your chatbot (build with Chatfuel)",
+  "name": "farmacias",
+  "description": "buscadador de farmacias",
   "homepage": "http://chatxbot.com",
   "keywords": ["chatbot", "chatfuel", "messenger bot", "facebook bot", "json api"],
   "type": "library",
-  "license": "MIT",
+  "license": "farmacias",
   "authors": [{
     "name": "Chatxbot",
     "email": "hola@chatxbot.com",
